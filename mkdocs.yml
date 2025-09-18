@@ -1,8 +1,8 @@
 site_name: shadil
-repo_url: https://github.com/shadil-rayyan/mulearn_super_power_mkdocs
-site_url: https://shadil-rayyan.github.io/mulearn_super_power_mkdocs/
+
+
 theme:
-  name : material
+  name: material
   font:
     text: Roboto
     code: Roboto Mono
@@ -13,22 +13,20 @@ theme:
     - search.suggest 
     - search.share
     - navigation.footer
-
   palette: 
-
     # Palette toggle for light mode
     - scheme: default
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
-
     # Palette toggle for dark mode
     - scheme: slate
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
 
-copyright: Copyright &copy; 2016 - 2020 Martin Donath
+copyright: Copyright © 2016 - 2020 Martin Donath
+
 extra:
   generator: false
   social:
