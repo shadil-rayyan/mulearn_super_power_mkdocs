@@ -1,0 +1,50 @@
+site_name: shadil
+repo_url: https://github.com/squidfunk/mkdocs-material
+theme:
+  name : material
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: assets/logo.jpeg
+  favicon: assets/logo.jpeg
+  features:
+    - navigation.tabs
+    - search.suggest 
+    - search.share
+    - navigation.footer
+
+  palette: 
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+copyright: Copyright &copy; 2016 - 2020 Martin Donath
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@squidfunk
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
